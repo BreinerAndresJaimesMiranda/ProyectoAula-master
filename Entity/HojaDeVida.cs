@@ -18,3 +18,4 @@ namespace Entity
         public List<DatoLaboral> DatosLaborales{get; set; }
     }
 }
+
