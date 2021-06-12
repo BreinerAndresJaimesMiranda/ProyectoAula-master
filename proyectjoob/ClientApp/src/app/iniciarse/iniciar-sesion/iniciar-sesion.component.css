@@ -1,0 +1,15 @@
+#inicioco{
+    background: url(/../assets/fondo3.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#inicioco-texto{
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.cont{
+    padding: 9.15rem 0;
+}

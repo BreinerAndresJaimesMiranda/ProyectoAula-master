@@ -1,0 +1,18 @@
+#about{
+    background:       
+        linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+    url(/../assets/fondo2.jpg) center center no-repeat;
+    background-size: cover;
+}
+.text-about{
+    background-color: white;
+    color:#559ACD;
+    padding: 1.875rem;
+    font-weight: 600;
+}
+.cont{
+    padding: 5rem 0;
+}

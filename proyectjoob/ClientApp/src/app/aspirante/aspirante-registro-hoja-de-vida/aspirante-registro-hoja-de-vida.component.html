@@ -1,0 +1,61 @@
+<section id="about">
+    <div class="cont">
+      <div class="container">
+        <div class="row">
+          <div class="col Center">
+            <div class="text-about">
+              <div class="container" class="cont-sec">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h1>Hoja De Vida</h1><hr>
+                        <form [formGroup]="formGroup" *ngIf="formGroup">
+                            <div class="form-group">
+                              <label>Titulo</label>
+                              <input type="text" class="form-control" placeholder="Descripción breve de tu perfil profesional " formControlName="Nombre" [ngClass]="{ 'is-invalid':  control.Nombre.errors && formGroup.get('Nombre').touched }">
+                              <div *ngIf=" control.Nombre.errors && formGroup.get('Nombre').touched" class="invalid-feedback">
+                                <div *ngIf="control.Nombre.errors.required">El titulo de la hoja de vida es requerida</div>
+                            </div>
+                            </div>
+                          <div class="form-group">
+                            <label>Descripción De Su Perfil Profecional</label>
+                            <textarea class="form-control" rows="5" placeholder="Descripción breve de tu perfil profesional" formControlName="DescripcionPerfilLaboral" [ngClass]="{ 'is-invalid':  control.DescripcionPerfilLaboral.errors && formGroup.get('DescripcionPerfilLaboral').touched }"></textarea>
+                            <div *ngIf=" control.DescripcionPerfilLaboral.errors && formGroup.get('DescripcionPerfilLaboral').touched" class="invalid-feedback">
+                              <div *ngIf="control.DescripcionPerfilLaboral.errors.required">La Descripcion del perfil profecional es requerida</div>
+                          </div>
+                          </div>
+   
+                            <div class="text-right"> 
+                                <button type="button" class="btn mr-3 btnSiguiente"
+                                [disabled]="formGroup.invalid" data-bs-toggle="modal" data-bs-target="#ModalConfirmacion">Siguiente <img src="./assets/proximo.png" alt=""> </button>
+                            </div>
+                        </form>
+                        <div class="modal fade" id="ModalConfirmacion" tabindex="-1">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h2 class="modal-title" id="exampleModalLabel">¿Estas seguro que deseas continuar?</h2>
+                                <button type="button" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Estimado usuario/a, al pasar a la siguiente parte del formulario, está autorizando que guardemos la información que a digitado hasta ahora, por lo cual
+                                  le pedimos amablemente que revise la información digitada, ya que después no podrá volver a esta parte del formulario.
+                                  También tenga en cuenta que podrá actualizar o modificar más tarde la información en su cuenta. <br>
+                                  Si no hay ningun problema, puede proseguir con el registro, tenga un buen dia :).
+                                </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                                <button type="button" class="btn btn-primary" (click)="onSubmit()"  [routerLink]="['/aspiranteRegistroDatos']" data-bs-dismiss="modal">Guardar y Seguir</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

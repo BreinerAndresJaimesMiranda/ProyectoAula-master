@@ -1,0 +1,38 @@
+.cont{
+    padding: 5rem 0;
+}
+#about{
+ background: 
+ linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),
+ url(/../assets/fondo1.jpg) center center no-repeat;
+ background-size: cover;
+}
+.text-about{
+    background:white;
+    color:#559ACD;
+    padding: 1,875rem;
+    font-weight: 600;
+}
+.cont-sec{
+    padding: 2rem 0;
+}
+.toast{
+    background-color: black;
+}
+.img-ic{
+    background-color: white;
+    border-style: none;
+}
+
+.btnSiguiente{
+    color: #559ACD;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.modal-body{
+    text-align: justify;
+}

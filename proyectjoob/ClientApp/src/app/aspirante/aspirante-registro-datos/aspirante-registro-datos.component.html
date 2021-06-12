@@ -1,0 +1,228 @@
+
+<section id="about">
+    <div class="cont">
+      <div class="container">
+        <div class="row">
+          <div class="col Center">
+            <div class="text-about">
+              <div class="container" class="cont-sec">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                      <h1 class="float-left">Registro de datos </h1>
+                      <p class="textOpcion">( opcional )</p>
+                   
+                        <h2>Formacion Academica</h2><hr>
+                        <div class="container overflow-hidden">
+                          <div class="row gx-5">
+                            <div class="col-12" *ngFor="let datoAcademico of datosAcademicos; index as i">
+                             <div class="p-3 border border-info">
+                              <div class="row justify-content-between">
+                                <div class="col-6">
+                                  <div class="text-left">
+                                    <h2 class="tituloAca">{{ datoAcademico.NombreCentroAcademico }}</h2>
+                                    <p class="subtitulo">{{ datoAcademico.NivelEducativo }}</p>
+                                  </div>
+                                </div>
+                                <div class="col-6">
+                                  <div class="text-right">
+                                    <h4 class="tituloFec">( {{ datoAcademico.FechaInicio.getUTCMonth() +1}}/{{ datoAcademico.FechaInicio.getFullYear()}} - {{ datoAcademico.FechaFinalizacion.getUTCMonth() +1}}/{{ datoAcademico.FechaFinalizacion.getFullYear()}} )</h4>
+                                    <p class="subtitulo">{{ datoAcademico.EstadoCurso }}</p>
+                                  </div>
+                                </div>
+                              </div>
+                             </div><br>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Agregar Dato Academico
+                        </button><br><br>
+                        
+
+                          <h2>Experencias Laborales</h2><hr>
+                          <div class="container overflow-hidden">
+                            <div class="row gx-5">
+                              <div class="col-12" *ngFor="let datoLaboral of datosLaborales; index as i">
+                               <div class="p-3 border border-info">
+                                <div class="row justify-content-between">
+                                  <div class="col-6">
+                                    <div class="text-left">
+                                      <h2 class="tituloAca">{{ datoLaboral.NombreEmpresa }}</h2>
+                                      <p class="subtitulo">{{ datoLaboral.Cargo }}</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="text-right">
+                                      <h4 class="tituloFec">( {{ datoLaboral.FechaInicio.getUTCMonth() +1}}/{{ datoLaboral.FechaInicio.getFullYear()}} - {{ datoLaboral.FechaFinalizacion.getUTCMonth() +1}}/{{ datoLaboral.FechaFinalizacion.getFullYear()}} )</h4>
+                                      <p class="subtitulo">{{ datoLaboral.Area }}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div><br>
+                              </div>
+                            </div>
+                          </div>
+
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AgregarExperienciaLaboralModal">
+                            Agregar Experiencia Laboral
+                          </button><br><br>
+
+                        
+                            
+                            <div class="text-right"> 
+                                <button class="btn mr-3 btnSiguiente">Terminar <img src="./assets/salida.png" alt=""></button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Modal Agregar Dato Academico-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Agregar Dato Academico</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+
+
+
+                                <form id="xd" [formGroup]="formGroupdatoAcademico" *ngIf="formGroupdatoAcademico">
+                                <div class="form-group">
+                                    <label>Nombre Del Centro Educativo</label>
+                                    <input type="text" class="form-control" placeholder="Ingresa el nombre de la institucion de la que proviene el titulo" formControlName="NombreCentroAcademico" [ngClass]="{ 'is-invalid':  controldatoAcademico.NombreCentroAcademico.errors && formGroupdatoAcademico.get('NombreCentroAcademico').touched }">
+                                    <div *ngIf=" controldatoAcademico.NombreCentroAcademico.errors && formGroupdatoAcademico.get('NombreCentroAcademico').touched" class="invalid-feedback">
+                                      <div *ngIf="controldatoAcademico.NombreCentroAcademico.errors.required">El Nombre Del Centro Educativo es requerido</div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label>Nivel De Estudios</label>
+                                  <select class="form-select" name="NivelEducativo" formControlName="NivelEducativo" [ngClass]="{ 'is-invalid':  controldatoAcademico.NivelEducativo.errors && formGroupdatoAcademico.get('NivelEducativo').touched }" >
+                                    <option value="Nivel de estudios">Nivel de estudios</option>
+                                    <option value="Educacion Básica Primaria">Educacion Básica Primaria</option>
+                                    <option value="Bachillerato - Educación Media">Bachillerato - Educación Media</option>
+                                    <option value="Universidad - Carrera Técnica">Universidad - Carrera Técnica</option>
+                                    <option value="Universidad - Carrera Tecnológica">Universidad - Carrera Tecnológica</option>
+                                    <option value="Universidad - Carrera Profesional">Universidad - Carrera Profesional</option>
+                                    <option value="Postgrado - Especialización">Postgrado - Especialización</option>
+                                    <option value="Postgrado - Maestría">Postgrado - Maestría</option>
+                                    <option value="Postgrado - Doctorado">Postgrado - Doctorado</option>
+                                  </select>
+                                  <div *ngIf=" controldatoAcademico.NivelEducativo.errors && formGroupdatoAcademico.get('NivelEducativo').touched" class="invalid-feedback">
+                                    <div *ngIf="controldatoAcademico.NivelEducativo.errors.required">El Nivel De Estudios es requerido</div>
+                                    <div *ngIf="controldatoAcademico.NivelEducativo.errors.ValidnivelEducativo">{{controldatoAcademico.NivelEducativo.errors.messageNivelAcademico}}</div>
+                                </div>
+                                </div>
+                                <div class="form-group" >
+                                  <label>Area De Estudios</label>
+                                  <input type="text" id="prueba" class="form-control" placeholder="Ingresa el nombre de la institucion de la que proviene el titulo" formControlName="AreaEstudio" [ngClass]="{ 'is-invalid':  controldatoAcademico.AreaEstudio.errors && formGroupdatoAcademico.get('AreaEstudio').touched}" disabled>
+                                  <div *ngIf=" controldatoAcademico.AreaEstudio.errors && formGroupdatoAcademico.get('AreaEstudio').touched" class="invalid-feedback">
+                                    <div *ngIf="controldatoAcademico.AreaEstudio.errors.required">El Nombre Del Centro Educativo es requerido</div>
+                                </div>
+                              </div>
+                                <div class="form-group">
+                                  <label>Estado</label>
+                                  <select class="form-select" name="NivelEducativo" formControlName="EstadoCurso" [ngClass]="{ 'is-invalid':  controldatoAcademico.EstadoCurso.errors && formGroupdatoAcademico.get('EstadoCurso').touched }" >
+                                    <option value="Seleccione el Estado">Seleccione el Estado</option>
+                                    <option value="Terminado">Terminado</option>
+                                    <option value="Actualmente cursando">Actualmente cursando</option>
+                                    <option value="Abandonado o aplazado">Abandonado o aplazado</option>
+                                  </select>
+                                  <div *ngIf=" controldatoAcademico.EstadoCurso.errors && formGroupdatoAcademico.get('EstadoCurso').touched" class="invalid-feedback">
+                                    <div *ngIf="controldatoAcademico.EstadoCurso.errors.required">El Estado es requerido</div>
+                                    <div *ngIf="controldatoAcademico.EstadoCurso.errors.ValidEstadoCurso">{{controldatoAcademico.EstadoCurso.errors.messageEstadoCurso}}</div>
+                                </div>
+                                </div>
+                              <h5>Periodos</h5>
+                                <div class="form-group">
+                                  <label>Periodo Inicial</label>
+                                  <input type="month" name="" class="form-control" formControlName="FechaInicio" [ngClass]="{ 'is-invalid':  controldatoAcademico.FechaInicio.errors && formGroupdatoAcademico.get('FechaInicio').touched }"/>
+                                  <div *ngIf=" controldatoAcademico.FechaInicio.errors && formGroupdatoAcademico.get('FechaInicio').touched" class="invalid-feedback">
+                                    <div *ngIf="controldatoAcademico.FechaInicio.errors.required">El Periodo Inicial es requerido</div>
+                                </div>
+                                </div>
+                              <div class="form-group">
+                                <label>Periodo Final</label>
+                                <input type="month"  name="" class="form-control" formControlName="FechaFinalizacion" [ngClass]="{ 'is-invalid':  controldatoAcademico.FechaFinalizacion.errors && formGroupdatoAcademico.get('FechaFinalizacion').touched }"/>
+                                <div *ngIf=" controldatoAcademico.FechaFinalizacion.errors && formGroupdatoAcademico.get('FechaFinalizacion').touched" class="invalid-feedback">
+                                  <div *ngIf="controldatoAcademico.FechaFinalizacion.errors.required">El Periodo Final es requerido</div>
+                              </div>
+                              </div>
+                                </form>
+
+
+
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button"  class="btn btn-primary" [disabled]="formGroupdatoAcademico.invalid" (click)="onSubmitDatoAcademico()">Agregar</button>
+                              </div>
+                            </div>
+                          </div>
+</div>
+<!-- Modal Agregar Experiencia Labolaral-->
+<div class="modal fade" id="AgregarExperienciaLaboralModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Agregar Experiencia Laboral</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form id="DatosLaborales" [formGroup]="formGroupdatoLaboral" *ngIf="formGroupdatoLaboral">
+                                <div class="form-group">
+                                    <label>Nombre De La Empresa</label>
+                                    <input type="text" class="form-control" placeholder="Ingresa el nombre de la empresa en la que trabajaste" formControlName="NombreEmpresa" [ngClass]="{ 'is-invalid':  controldatoLaboral.NombreEmpresa.errors && formGroupdatoLaboral.get('NombreEmpresa').touched }">
+                                    <div *ngIf=" controldatoLaboral.NombreEmpresa.errors && formGroupdatoLaboral.get('NombreEmpresa').touched" class="invalid-feedback">
+                                      <div *ngIf="controldatoLaboral.NombreEmpresa.errors.required">El Nombre De La Empresa es requerido</div>
+                                  </div>
+                                  </div>
+                                <div class="form-group">
+                                  <label>Cargo</label>
+                                  <input type="text" name="" class="form-control" placeholder="Ingresa el cargo que desempeñabas en la empresa" formControlName="Cargo" [ngClass]="{ 'is-invalid':  controldatoLaboral.Cargo.errors && formGroupdatoLaboral.get('Cargo').touched }"/>
+                                  <div *ngIf=" controldatoLaboral.Cargo.errors && formGroupdatoLaboral.get('Cargo').touched" class="invalid-feedback">
+                                    <div *ngIf="controldatoLaboral.Cargo.errors.required">El Cargo es requerido</div>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                  <label>Area</label>
+                                  <input type="text" name="" class="form-control" placeholder="Ingresa el area en la que desempeñabas en la empresa" formControlName="Area" [ngClass]="{ 'is-invalid':  controldatoLaboral.Area.errors && formGroupdatoLaboral.get('Area').touched }"/>
+                                  <div *ngIf=" controldatoLaboral.Area.errors && formGroupdatoLaboral.get('Area').touched" class="invalid-feedback">
+                                    <div *ngIf="controldatoLaboral.Area.errors.required">El Area es requerido</div>
+                                </div>
+                                </div>
+                              <h5>Periodos</h5>
+                                <div class="form-group">
+                                  <label>Periodo Inicial</label>
+
+                                  <input type="month" class="form-control" formControlName="FechaInicio" [ngClass]="{ 'is-invalid':  controldatoLaboral.FechaInicio.errors && formGroupdatoLaboral.get('FechaInicio').touched }"/>
+                                  <div *ngIf=" controldatoLaboral.FechaInicio.errors && formGroupdatoLaboral.get('FechaInicio').touched" class="invalid-feedback">
+                                    <div *ngIf="controldatoLaboral.FechaInicio.errors.required">El Periodo Inicial es requerido</div>
+                                </div>
+                                </div>
+                              <div class="form-group">
+                                <label>Periodo Final</label>
+                                <input type="month" name="" class="form-control" formControlName="FechaFinalizacion" [ngClass]="{ 'is-invalid':  controldatoLaboral.FechaFinalizacion.errors && formGroupdatoLaboral.get('FechaFinalizacion').touched }"/>
+                                <div *ngIf=" controldatoLaboral.FechaFinalizacion.errors && formGroupdatoLaboral.get('FechaFinalizacion').touched" class="invalid-feedback">
+                                  <div *ngIf="controldatoLaboral.FechaFinalizacion.errors.required">El Periodo Final es requerido</div>
+                              </div>
+                              </div>
+                                </form>
+
+
+
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" [disabled]="formGroupdatoLaboral.invalid" class="btn btn-primary" (click)="onSubmitDatoLaboral()">Agregar</button>
+                              </div>
+                            </div>
+                          </div>
+</div>

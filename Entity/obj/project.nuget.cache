@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PhUodFs8UCLDdWTiou6p+5YGqUHnEtQwnJTdGzq/lIjOOEzbNWoxEgaJu1cuMFXnd4jCDfLv6jfuEvA86eJMSw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Breiner Jaimes\\Downloads\\Universidad\\SEMESTRE 5\\PROGRAMACION WEB\\proyecto-GRAFICO\\ProyectoAula-master\\Entity\\Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Breiner Jaimes\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,34 @@
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\Logica.deps.json
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\Logica.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\ref\Logica.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\Logica.pdb
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\Datos.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\Datos.pdb
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.csprojAssemblyReference.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.AssemblyInfoInputs.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.AssemblyInfo.cs
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.csproj.CopyComplete
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\ref\Logica.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\obj\Debug\net5.0\Logica.pdb
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\Entity.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Logica\bin\Debug\net5.0\Entity.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\Logica.deps.json
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\Logica.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\ref\Logica.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\Logica.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\Datos.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\Entity.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\Datos.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\bin\Debug\net5.0\Entity.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.csprojAssemblyReference.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.AssemblyInfo.cs
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.csproj.CopyComplete
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\ref\Logica.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Logica\obj\Debug\net5.0\Logica.pdb

@@ -1,0 +1,24 @@
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\bin\Debug\net5.0\Entity.deps.json
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\bin\Debug\net5.0\Entity.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\bin\Debug\net5.0\ref\Entity.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\bin\Debug\net5.0\Entity.pdb
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\Entity.csprojAssemblyReference.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\Entity.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\ref\Entity.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Entity\obj\Debug\net5.0\Entity.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\bin\Debug\net5.0\Entity.deps.json
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\bin\Debug\net5.0\Entity.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\bin\Debug\net5.0\ref\Entity.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\bin\Debug\net5.0\Entity.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\Entity.csprojAssemblyReference.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\Entity.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\ref\Entity.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Entity\obj\Debug\net5.0\Entity.pdb

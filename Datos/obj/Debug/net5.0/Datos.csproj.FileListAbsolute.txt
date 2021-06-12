@@ -1,0 +1,30 @@
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\bin\Debug\net5.0\Datos.deps.json
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\bin\Debug\net5.0\Datos.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\bin\Debug\net5.0\ref\Datos.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\bin\Debug\net5.0\Datos.pdb
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.csprojAssemblyReference.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.AssemblyInfoInputs.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.AssemblyInfo.cs
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.csproj.CopyComplete
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\ref\Datos.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\obj\Debug\net5.0\Datos.pdb
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\bin\Debug\net5.0\Entity.dll
+C:\Users\DAVILA\Desktop\ProyectoAula\Datos\bin\Debug\net5.0\Entity.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\bin\Debug\net5.0\Datos.deps.json
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\bin\Debug\net5.0\Datos.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\bin\Debug\net5.0\ref\Datos.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\bin\Debug\net5.0\Datos.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\bin\Debug\net5.0\Entity.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\bin\Debug\net5.0\Entity.pdb
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.csprojAssemblyReference.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.AssemblyInfo.cs
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.csproj.CopyComplete
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\ref\Datos.dll
+C:\Users\Breiner Jaimes\Downloads\Universidad\SEMESTRE 5\PROGRAMACION WEB\proyecto-GRAFICO\ProyectoAula-master\Datos\obj\Debug\net5.0\Datos.pdb
