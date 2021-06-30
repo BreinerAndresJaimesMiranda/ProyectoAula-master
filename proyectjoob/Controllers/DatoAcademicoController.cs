@@ -46,9 +46,13 @@ namespace proyectjoob.Controllers
                 var informacionDatoAcademicoViewModel = new InformacionDatoAcademicoViewModel(datoAcademico);
                 return Ok(informacionDatoAcademicoViewModel);
             }
-            return BadRequest(response.Mensaje);
 
-                }
+            ModelState.AddModelError("Guardar Dato Academico", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
+
+            }
             
         }
 
@@ -67,7 +71,10 @@ namespace proyectjoob.Controllers
                 var informacionDatoAcademicoViewModel = new InformacionDatoAcademicoViewModel(datoAcademico);
                 return Ok(informacionDatoAcademicoViewModel);
             }
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Modificar Dato Academico", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
         }
 
 

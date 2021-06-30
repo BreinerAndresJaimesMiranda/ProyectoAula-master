@@ -40,7 +40,10 @@ namespace proyectjoob.Controllers
                 var EmpresaViewModel = new InformacionEmpresaViewModel(empresa);
                 return Ok(EmpresaViewModel);
             }
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Guardar Empresa", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
         }
 
 
@@ -57,7 +60,10 @@ namespace proyectjoob.Controllers
                 var informacionEmpresaViewModel = new InformacionEmpresaViewModel(empresa);
                 return Ok(informacionEmpresaViewModel);
             }
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Modificar Empresa", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
         }
 
 

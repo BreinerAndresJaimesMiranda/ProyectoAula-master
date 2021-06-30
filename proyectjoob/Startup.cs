@@ -1,3 +1,5 @@
+using System.Net;
+using System.Net.Security;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Datos;
 using Microsoft.EntityFrameworkCore;
 using System;
+using proyectjoob.Hubs;
 using Microsoft.OpenApi.Models;
 
 namespace proyectjoob
@@ -33,6 +36,8 @@ namespace proyectjoob
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,6 +73,8 @@ namespace proyectjoob
 
             app.UseEndpoints(endpoints =>
             {
+
+                endpoints.MapHub<SignalHub>("/SignalHub");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
@@ -86,6 +93,11 @@ namespace proyectjoob
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+
+
+
+
+
         }
     }
 }

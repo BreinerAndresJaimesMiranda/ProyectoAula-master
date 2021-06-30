@@ -47,8 +47,11 @@ namespace proyectjoob.Controllers
                 var informacionDatoLaboralViewModel = new InformacionDatoLaboralViewModel(datoLaboral);
                 return Ok(informacionDatoLaboralViewModel);
             }
-            return BadRequest(response.Mensaje);
-                }
+            ModelState.AddModelError("Guardar Dato Laboral", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
+            }
         }
 
 
@@ -67,7 +70,10 @@ namespace proyectjoob.Controllers
                 var informacionDatoLaboralViewModel = new InformacionDatoLaboralViewModel(datoLaboral);
                 return Ok(informacionDatoLaboralViewModel);
             }
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Modificar Dato Laboral", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
         }
 
 

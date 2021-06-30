@@ -3,15 +3,26 @@ using Entity;
 using OfertaLaboralModel.Model;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmpresaModel.Model
 {
     public class EmpresaInputModel
     {
+        [Required(ErrorMessage = "El Correo es requerido")]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "El correo no es valido")]
         public string Correo{get;set;}
+
+        [Required(ErrorMessage = "La contraseña es requerida")]
         public string Contrasenia{get;set;}
+
+        [Required(ErrorMessage = "El tipo de servicio es requerido")]
         public string TipoServicio{get;set;}
+
+        [Required(ErrorMessage = "El nombre es requerido")]
         public string Nombre{get;set;}
+
+        [Required(ErrorMessage = "El nit es requerido")]
         public string Nit{get;set;}
     }
 

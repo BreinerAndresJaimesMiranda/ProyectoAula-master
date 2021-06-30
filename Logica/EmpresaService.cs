@@ -23,11 +23,17 @@ namespace Logica
             try
             {
                 var _empresa = _context.Empresas.Find(empresa.Nit);
-                if (_empresa == null)
+                var _empresaCorreo = BuscarPorCorreo(empresa.Correo);
+                if (_empresa == null && _empresaCorreo.Empresa==null)
                 {
                     _context.Empresas.Add(empresa);
                     _context.SaveChanges();
                     return new GuardarEmpresaResponse(empresa);
+                }
+
+                if(_empresaCorreo.Empresa!=null)
+                {
+                    return new GuardarEmpresaResponse("El correo ya se encuentra en uso");
                 }
 
                 return new GuardarEmpresaResponse("El empresa ya se encuentra Registrado");
@@ -52,7 +58,7 @@ namespace Logica
                         _empresaOld.Nit = empresaNew.Nit;
                         _empresaOld.Contrasenia = empresaNew.Contrasenia;
                         _empresaOld.Nombre = empresaNew.Nombre;
-                        _empresaOld.Correo = empresaNew.Correo;
+                        _empresaOld.Correo = _empresaOld.Correo;
                         _empresaOld.TipoServicio = empresaNew.TipoServicio; 
                         //_context.Empresas.Add(empresaNew);
                         _context.Empresas.Update(_empresaOld);

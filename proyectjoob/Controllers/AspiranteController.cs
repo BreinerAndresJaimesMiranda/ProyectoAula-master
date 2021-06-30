@@ -40,7 +40,12 @@ namespace proyectjoob.Controllers
                 var informacionAspiranteViewModel = new InformacionAspiranteViewModel(aspirante);
                 return Ok(informacionAspiranteViewModel);
             }
-            return BadRequest(response.Mensaje);
+
+            ModelState.AddModelError("Guardar Aspirante", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
+
         }
 
 
@@ -58,7 +63,10 @@ namespace proyectjoob.Controllers
                 var informacionAspiranteViewModel = new InformacionAspiranteViewModel(aspirante);
                 return Ok(informacionAspiranteViewModel);
             }
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Modificar Aspirante", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
         }
 
 

@@ -2,6 +2,7 @@ using System;
 using Entity;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel.DataAnnotations;
 using DatoLaboralModel.Model;
 using DatoAcademicoModel.Model;
 using AspiranteModel.Model;
@@ -12,8 +13,15 @@ namespace HojaDeVidaModel.Model
     public class HojaDeVidaInputModel
     { 
         public int HojaDeVidaId { get; set;}
+
+        [Required(ErrorMessage = "El nombre es requerido")]
         public string Nombre{ get; set; }
+
+        [Required(ErrorMessage = "La descripcion laboral es requerida")]
         public string DescripcionPerfilLaboral{ get; set; }
+
+        [Required(ErrorMessage = "El id del aspirante es requerido")]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "El correo no es valido")]
         public string AspiranteId{ get; set; }
         
     }

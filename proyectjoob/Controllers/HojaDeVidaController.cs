@@ -46,7 +46,10 @@ namespace proyectjoob.Controllers
                     return Ok(informacionHojaDeVidaViewModel);
                 }
             
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Guardar Hoja De Vida", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
             }
 
 
@@ -68,7 +71,10 @@ namespace proyectjoob.Controllers
                 var informacionHojaDeVidaViewModel = new InformacionHojaDeVidaViewModel(hojaDeVida);
                 return Ok(informacionHojaDeVidaViewModel);
             }
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Modificar Hoja De Vida", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
         }
 
 

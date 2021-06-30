@@ -6,6 +6,9 @@ using Entity;
 using Logica;
 using Microsoft.AspNetCore.Mvc;
 using OfertaLaboralModel.Model;
+using Microsoft.AspNetCore.SignalR;
+using proyectjoob.Hubs;
+using System.Threading.Tasks;
 
 namespace proyectjoob.Controllers
 {
@@ -15,9 +18,11 @@ namespace proyectjoob.Controllers
     public class OfertaLaboralController : ControllerBase
     {
         private readonly OfertaLaboralService ofertaLaboralService;
+        private readonly IHubContext<SignalHub> _hubContext;
         private readonly EmpresaService empresaService;
-        public OfertaLaboralController(ProyectjoobContext context)
+        public OfertaLaboralController(ProyectjoobContext context, IHubContext<SignalHub> hubContext)
         {
+            _hubContext=hubContext;
             ofertaLaboralService = new OfertaLaboralService(context);
             empresaService=new EmpresaService(context);
         }
@@ -31,7 +36,7 @@ namespace proyectjoob.Controllers
 
 
         [HttpPost]
-        public ActionResult<InformacionOfertaLaboralViewModel> PostOfertaLaboral(OfertaLaboralInputModel OfertaLaboralInput)
+        public async Task<ActionResult<InformacionOfertaLaboralViewModel>> PostOfertaLaboral(OfertaLaboralInputModel OfertaLaboralInput)
         {
             var buscarEmpresaResponse=empresaService.BuscarPorCorreo(OfertaLaboralInput.CorreoEmpresa);
             if(buscarEmpresaResponse.Empresa==null){
@@ -43,10 +48,14 @@ namespace proyectjoob.Controllers
                 if (!response.Error)
                 {
                     var informacionOfertaLaboralViewModel = new InformacionOfertaLaboralViewModel(ofertaLaboral);
+                    await _hubContext.Clients.All.SendAsync("PostOfertaLaboral",OfertaLaboralInput);
                     return Ok(informacionOfertaLaboralViewModel);
                 }
             
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Guardar Oferta Laboral", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
             }
 
 
@@ -59,7 +68,7 @@ namespace proyectjoob.Controllers
 
 
         [HttpPost("api/ModificarOfertaLaboral")]
-        public ActionResult<InformacionOfertaLaboralViewModel> PostModificarOfertaLaboral(OfertaLaboralInputModel OfertaLaboralNewInput)
+        public async Task<ActionResult<InformacionOfertaLaboralViewModel>> PostModificarOfertaLaboral(OfertaLaboralInputModel OfertaLaboralNewInput)
         {
 
             var ofertaLaboral = MapearOfertaLaboral(OfertaLaboralNewInput);
@@ -68,9 +77,13 @@ namespace proyectjoob.Controllers
             if (!response.Error)
             {
                 var informacionOfertaLaboralViewModel = new InformacionOfertaLaboralViewModel(ofertaLaboral);
+                await _hubContext.Clients.All.SendAsync("ModificarOfertaLaboral",OfertaLaboralNewInput);
                 return Ok(informacionOfertaLaboralViewModel);
             }
-            return BadRequest(response.Mensaje);
+            ModelState.AddModelError("Modificar Oferta Laboral", response.Mensaje);
+            var problemDetails = new ValidationProblemDetails(ModelState);
+            problemDetails.Status= 400;
+            return BadRequest(problemDetails);
         }
 
 

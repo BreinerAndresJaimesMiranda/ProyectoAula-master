@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using OfertaLaboralModel.Model;
 using AspiranteModel.Model;
+using System.ComponentModel.DataAnnotations;
 
 
 
@@ -11,7 +12,11 @@ namespace PostulacionModel.Model
 {
     public class PostulacionInputModel
     { 
+        [Required(ErrorMessage = "El id del aspirante requerido")]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "El correo no es valido")]
         public string AspiranteId{get;set;}
+
+        [Required(ErrorMessage = "El id de la oferta laboral es requerido")]
         public int OfertaLaboralId{get;set;}
         
     }

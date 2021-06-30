@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using Entity;
 using HojaDeVidaModel.Model;
 
@@ -7,12 +8,27 @@ namespace DatoAcademicoModel.Model
     public class DatoAcademicoInputModel
     {
         public int DatoAcademicoId{get;set;}
+
+        [Required(ErrorMessage = "El nombre del centro academico es requerido")]
         public string NombreCentroAcademico{get; set; }
+
+        [Required(ErrorMessage = "El nivel educativo es requerido")]
         public string NivelEducativo{get; set; }
+
+        [Required(ErrorMessage = "El area de estudio es requerida")]
         public string AreaEstudio{get; set; }
+
+        [Required(ErrorMessage = "El estado del curso es requerido")]
         public string EstadoCurso{get; set; }
+
+        [Required(ErrorMessage = "La fecha de inicio del curso es requerida")]
         public DateTime FechaInicio{get; set; }
+
+        [Required(ErrorMessage = "La fecha de finalizacion del curso es requerida")]
         public DateTime FechaFinalizacion{get; set; }
+
+        [Required(ErrorMessage = "El id del aspirante es requerido")]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "El correo no es valido")]
         public string AspiranteId{get; set;}
     }
 

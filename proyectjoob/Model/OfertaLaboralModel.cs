@@ -4,17 +4,30 @@ using System.Collections.Generic;
 using System.Linq;
 using EmpresaModel.Model;
 using PostulacionModel.Model;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace OfertaLaboralModel.Model
 {
     public class OfertaLaboralInputModel
     { 
+        
         public int OfertaLaboralId{get;set;}
+
+        [Required(ErrorMessage = "La descripcion es requerida")]
         public string Descripcion{get;set;}
+
+        [Required(ErrorMessage = "El salario es requerido")]
         public int Salario{get;set;}
+
+        [Required(ErrorMessage = "El cargo es requerido")]
         public string Cargo{get;set;}
+
+        [Required(ErrorMessage = "El Horario es requerido")]
         public string Horario{get;set;}
+
+        [Required(ErrorMessage = "El Correo de la empresa es requerido")]
+        [RegularExpression(@"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$", ErrorMessage = "El correo no es valido")]
         public string CorreoEmpresa{ get; set; }
         
     }
